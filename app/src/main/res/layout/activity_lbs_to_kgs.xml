@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".lbs_to_kgs">
 
     <TextView
         android:layout_marginTop="100dp"
@@ -21,47 +21,50 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/uctext"
-        android:textSize="50px"
+        android:textSize="70px"
         android:id="@+id/desc"
-        android:text="Imperial to Metric Converter"
+        android:text="Pounds to Kilograms"
         android:textAlignment="center"/>
 
-
-    <Button
-        android:layout_width="match_parent"
+    <!--<TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="100dp"
-        android:textSize="50px"
-        android:textAlignment="center"
-        android:text="Miles to Kilometres"
-        android:id="@+id/btn1"
+        android:text="Miles:"
+        android:id="@+id/milestext"
         android:layout_below="@+id/desc"
+        android:textSize="50px"
+        android:layout_marginTop="100px"
+        android:textAlignment="center"
+        />
+    -->
+    <EditText
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:hint="Enter Pounds"
+        android:id="@+id/edt_pounds"
+        android:layout_below="@+id/desc"
+        android:layout_marginTop="100px"
+        android:textSize="75px"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="200px"/>
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="75px"
+        android:id="@+id/result_kgs"
+        android:hint="Result in Kgs"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10px"
+        android:layout_marginBottom="10px"
+        android:layout_below="@+id/edt_pounds"/>
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="100dp"
-        android:textSize="50px"
-        android:textAlignment="center"
-        android:text="Gallons to Litres"
-        android:id="@+id/btn2"
-        android:layout_below="@+id/btn1"
+        android:text="Submit"
+        android:layout_below="@id/result_kgs"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50px"/>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="100dp"
-        android:textSize="50px"
-        android:textAlignment="center"
-        android:text="Pounds to Kilograms"
-        android:id="@+id/btn3"
-        android:layout_below="@+id/btn2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50px"/>
-
-
+        android:id="@+id/submit_btn"
+        android:layout_marginTop="10px"/>
 </RelativeLayout>
