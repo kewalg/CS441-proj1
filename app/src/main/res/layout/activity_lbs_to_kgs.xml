@@ -49,10 +49,10 @@
         android:textAlignment="center"/>
 
     <TextView
+        android:id="@+id/result_kgs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="75px"
-        android:id="@+id/result_kgs"
         android:hint="Result in Kgs"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10px"
@@ -60,11 +60,20 @@
         android:layout_below="@+id/edt_pounds"/>
 
     <Button
+        android:id="@+id/submit_pounds"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Submit"
         android:layout_below="@id/result_kgs"
         android:layout_centerHorizontal="true"
-        android:id="@+id/submit_btn"
         android:layout_marginTop="10px"/>
+
+    <Button
+        android:id="@+id/backbtn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_toRightOf="@+id/result_kgs"
+        android:layout_below="@id/result_kgs"
+        />
 </RelativeLayout>
