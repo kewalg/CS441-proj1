@@ -24,7 +24,7 @@ public class gl_to_lit extends AppCompatActivity {
 
                 //Declaring different fields.
                 EditText edtgallons = findViewById(R.id.edt_gallons);
-                TextView resultInLit = (TextView)findViewById(R.id.result_kms);
+                TextView resultInLit = (TextView)findViewById(R.id.result_lit);
 
                 //Fetching text from Edittext
                 String gallons = edtgallons.getText().toString();
