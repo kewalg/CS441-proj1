@@ -40,14 +40,14 @@
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="100dp"
         android:layout_marginTop="100px"
-        android:inputType="number"
         android:backgroundTint="#FFFFFF"
         android:fontFamily="@font/hattori_hanzo"
         android:hint="Enter Gallons"
+        android:inputType="number"
         android:textAlignment="center"
+        android:textColor="#FFFFFF"
         android:textColorHint="#ffffff"
         android:textColorLink="#ffffff"
-        android:textColor="#FFFFFF"
         android:textSize="100px" />
 
     <TextView
@@ -56,12 +56,12 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/edt_gallons"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10px"
+        android:layout_marginTop="30px"
         android:layout_marginBottom="10px"
         android:fontFamily="@font/hattori_hanzo"
         android:hint="Result in Litres"
-        android:textColorHint="#FFFFFF"
         android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         android:textSize="75px" />
 
     <Button
@@ -71,7 +71,7 @@
         android:layout_below="@id/result_lit"
         android:layout_alignLeft="@id/edt_gallons"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50px"
+        android:layout_marginTop="150px"
         android:background="@drawable/btn_style"
         android:backgroundTint="#ffffff"
         android:fontFamily="@font/hattori_hanzo"
@@ -84,7 +84,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/result_lit"
         android:layout_alignRight="@id/edt_gallons"
-        android:layout_marginTop="50px"
+        android:layout_marginTop="150px"
         android:background="@drawable/btn_style"
         android:backgroundTint="#ffffff"
         android:fontFamily="@font/hattori_hanzo"

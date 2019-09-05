@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".splashscreen">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/plain_black" />
+
+    <TextView
+        android:id="@+id/splash_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:text="UnitsConverter"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="150px"
+        app:fontFamily="@font/hattori_hanzo" />
+
+    <TextView
+        android:id="@+id/splash_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/splash_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-10px"
+        android:text="Imperial to Metric."
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="75px"
+        app:fontFamily="@font/hattori_hanzo" />
+
+</RelativeLayout>

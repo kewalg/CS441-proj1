@@ -2,9 +2,11 @@ package com.example.unitsconverter;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -17,21 +19,27 @@ public class gl_to_lit extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gl_to_lit);
 
-        Button btn_gallons = (Button)findViewById(R.id.submit_gallons);
+        Button btn_gallons = (Button) findViewById(R.id.submit_gallons);
+        final TextView resultInLit = (TextView) findViewById(R.id.result_lit);
+        resultInLit.setVisibility(View.GONE);
+
         btn_gallons.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                InputMethodManager inputManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
+                resultInLit.setVisibility(View.VISIBLE);
 
                 //Declaring different fields.
                 EditText edtgallons = findViewById(R.id.edt_gallons);
-                TextView resultInLit = (TextView)findViewById(R.id.result_lit);
+                TextView resultInLit = (TextView) findViewById(R.id.result_lit);
 
                 //Fetching text from Edittext
                 String gallons = edtgallons.getText().toString();
 
                 //Converting into double for math.
                 double gallonsInDouble = Double.parseDouble(gallons);
-                double gltolit = gallonsInDouble*3.78541;
+                double gltolit = gallonsInDouble * 3.78541;
                 String finallit = Double.toString(gltolit);
 
                 //Setting the textview to result.
@@ -41,7 +49,7 @@ public class gl_to_lit extends AppCompatActivity {
             }
         });
 
-        Button backbtn2 = (Button)findViewById(R.id.backbtn2);
+        Button backbtn2 = (Button) findViewById(R.id.backbtn2);
         backbtn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
