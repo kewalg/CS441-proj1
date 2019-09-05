@@ -41,7 +41,7 @@ public class lbs_to_kgs extends AppCompatActivity {
 
                 //Converting into double for math.
                 double poundsInDouble = Double.parseDouble(pounds);
-                double lbstokgs = poundsInDouble * 0.45;
+                double lbstokgs = poundsInDouble * 0.453592;
                 String finalkgs = Double.toString(lbstokgs);
 
                 //Setting the textview to result.
