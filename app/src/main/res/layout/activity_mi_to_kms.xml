@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/white"
     tools:context=".mi_to_kms">
 
 
@@ -12,11 +13,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
-        android:fontFamily="@font/sanchez"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/hattori_hanzo"
         android:text="UnitsConverter"
         android:textAlignment="center"
-        android:textSize="100px" />
+        android:textColor="#ffffff"
+        android:textSize="150px" />
 
     <TextView
         android:id="@+id/desc"
@@ -24,33 +26,30 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/uctext"
         android:layout_centerHorizontal="true"
-        android:fontFamily="@font/sanchez"
-        android:text="Miles to Kilometers Converter"
+        android:layout_marginTop="10px"
+        android:layout_marginBottom="10px"
+        android:fontFamily="@font/hattori_hanzo"
+        android:text="Miles to Kilometers"
         android:textAlignment="center"
-        android:textSize="70px" />
+        android:textColor="#ffffff"
+        android:textSize="75px" />
 
-    <!--<TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Miles:"
-        android:id="@+id/milestext"
-        android:layout_below="@+id/desc"
-        android:textSize="50px"
-        android:layout_marginTop="100px"
-        android:textAlignment="center"
-        />
-    -->
     <EditText
         android:id="@+id/edt_miles"
-        android:layout_width="500px"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/desc"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100px"
-        android:fontFamily="@font/sanchez"
+        android:fontFamily="@font/hattori_hanzo"
         android:hint="Enter Miles"
         android:textAlignment="center"
-        android:textSize="75px" />
+        android:textColorHint="#FFFFFF"
+        android:inputType="number"
+        android:textColorLink="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#FFFFFF"
+        android:textSize="100px" />
 
     <TextView
         android:id="@+id/result_kms"
@@ -60,9 +59,12 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10px"
         android:layout_marginBottom="10px"
-        android:fontFamily="@font/sanchez"
+        android:fontFamily="@font/hattori_hanzo"
         android:hint="Result in Kms"
         android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         android:textSize="75px" />
 
     <Button
@@ -70,7 +72,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/result_kms"
-        android:layout_alignLeft="@id/result_kms"
+        android:layout_alignLeft="@id/desc"
+        android:layout_marginTop="50px"
+        android:background="@drawable/btn_style"
+        android:backgroundTint="#ffffff"
         android:text="Submit" />
 
     <Button
@@ -78,7 +83,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/result_kms"
-        android:layout_alignRight="@id/result_kms"
+        android:layout_alignRight="@id/desc"
+        android:layout_marginTop="50px"
+        android:background="@drawable/btn_style"
+        android:backgroundTint="#ffffff"
         android:fontFamily="@font/sanchez"
         android:text="Back" />
 </RelativeLayout>

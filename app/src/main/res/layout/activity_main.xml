@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/minimalist_city"
+    android:background="@drawable/white"
     tools:context=".MainActivity">
 
     <TextView
@@ -12,16 +12,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
-        android:shadowColor="#333333"
-        android:shadowDx="10"
-        android:shadowDy="2"
-        android:shadowRadius="5"
+        android:layout_marginTop="200dp"
         android:text="UnitsConverter"
         android:textAlignment="center"
-        android:textColor="#82E064"
-        android:textSize="100px"
-        app:fontFamily="@font/sanchez" />
+        android:textColor="#ffffff"
+        android:textSize="150px"
+        app:fontFamily="@font/hattori_hanzo" />
 
     <TextView
         android:id="@+id/desc"
@@ -31,52 +27,55 @@
         android:layout_centerHorizontal="true"
         android:text="Imperial to Metric Converter"
         android:textAlignment="center"
-        android:textColor="#E0B664"
-        android:textSize="50px"
-        app:fontFamily="@font/sanchez" />
+        android:textColor="#ffffff"
+        android:textSize="75px"
+        app:fontFamily="@font/hattori_hanzo" />
 
 
     <Button
         android:id="@+id/btn1"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/desc"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="100dp"
-        android:layout_marginTop="200px"
-        android:backgroundTint="#E0B664"
-        android:text="Miles to Kilometres"
+        android:background="@drawable/btn_style"
+        android:layout_marginTop="100px"
+        android:backgroundTint="#ffffff"
+        android:text="Mi. to Kms"
         android:textAlignment="center"
-        android:textSize="50px"
-        app:fontFamily="@font/sanchez" />
+        android:textSize="60px"
+        app:fontFamily="@font/hattori_hanzo" />
 
     <Button
         android:id="@+id/btn2"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btn1"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="100dp"
         android:layout_marginTop="50px"
-        android:backgroundTint="#E0B664"
-        android:text="Gallons to Litres"
+        android:backgroundTint="#ffffff"
+        android:text="Gal to lit."
+        android:background="@drawable/btn_style"
         android:textAlignment="center"
-        android:textSize="50px"
-        app:fontFamily="@font/sanchez" />
+        android:textSize="60px"
+        app:fontFamily="@font/hattori_hanzo" />
 
     <Button
         android:id="@+id/btn3"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btn2"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="100dp"
         android:layout_marginTop="50px"
-        android:backgroundTint="#E0B664"
-        android:text="Pounds to Kilograms"
+        android:backgroundTint="#ffffff"
+        android:text="Lbs. to kgs"
+        android:background="@drawable/btn_style"
         android:textAlignment="center"
-        android:textSize="50px"
-        app:fontFamily="@font/sanchez" />
+        android:textSize="60px"
+        app:fontFamily="@font/hattori_hanzo" />
 
 
 </RelativeLayout>
